@@ -11,7 +11,7 @@ public class TriangleClassifier {
 	}
 	
 	public static String classifyByAngle(int aOne, int aTwo, int aThree) {
-		if(aOne == aTwo && aOne == aTwo) {
+		if((aOne < 90 || aTwo < 90 || aThree < 90) && (aOne != 90 && aTwo != 90 && aThree !=90) && (!(aOne > 90 || aTwo > 90 || aThree > 90))) {
 			return "acute";
 		}
 		if(aOne == 90 || aTwo == 90 || aThree ==90) {
